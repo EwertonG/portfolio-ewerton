@@ -1,0 +1,37 @@
+:root {
+  /* Cores */
+  --cor-fundo: #0e0e0e;
+  --cor-superficie: #181818;
+  --cor-borda: #242424;
+  --cor-borda-forte: #3a3a3a;
+  --cor-texto: #ededed;
+  --cor-texto-suave: #a3a3a3;
+  --cor-texto-fraco: #6b6b6b;
+  --cor-destaque: #f2f2f2;
+  --cor-destaque-texto: #0e0e0e;
+
+  /* Tipografia */
+  --fonte: 'Inter Tight', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --texto-xs: 0.6875rem;
+  --texto-sm: 0.8125rem;
+  --texto-base: 0.9375rem;
+  --texto-lg: 1.125rem;
+  --texto-titulo: clamp(2rem, 1.5rem + 2vw, 2.75rem);
+  --espaco-letras-rotulo: 0.18em;
+
+  /* Espaçamento */
+  --espaco-1: 0.25rem;
+  --espaco-2: 0.5rem;
+  --espaco-3: 0.75rem;
+  --espaco-4: 1rem;
+  --espaco-6: 1.5rem;
+  --espaco-8: 2rem;
+  --espaco-12: 3rem;
+  --espaco-16: 4rem;
+  --espaco-24: 6rem;
+
+  /* Layout */
+  --largura-conteudo: 38rem;
+  --raio: 4px;
+  --transicao: 180ms ease;
+}
