@@ -1,0 +1,30 @@
+/* Botões */
+.botao {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--espaco-2);
+  padding: var(--espaco-2) var(--espaco-4);
+  border: 1px solid var(--cor-borda-forte);
+  border-radius: var(--raio);
+  font-size: var(--texto-sm);
+  font-weight: 500;
+  transition:
+    background-color var(--transicao),
+    border-color var(--transicao),
+    color var(--transicao);
+}
+
+.botao:hover {
+  border-color: var(--cor-texto-suave);
+}
+
+.botao--primario {
+  background: var(--cor-destaque);
+  border-color: var(--cor-destaque);
+  color: var(--cor-destaque-texto);
+}
+
+.botao--primario:hover {
+  background: var(--cor-texto-suave);
+  border-color: var(--cor-texto-suave);
+}
