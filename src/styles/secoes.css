@@ -64,3 +64,10 @@
   color: var(--cor-texto);
   text-decoration-color: currentColor;
 }
+
+/* Sobre */
+.sobre__texto {
+  display: grid;
+  gap: var(--espaco-4);
+  margin-bottom: var(--espaco-8);
+}

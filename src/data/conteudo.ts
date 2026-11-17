@@ -38,3 +38,23 @@ export interface Detalhe {
   rotulo: string;
   valor: string;
 }
+
+export interface Sobre {
+  titulo: string;
+  paragrafos: string[];
+  detalhes: Detalhe[];
+}
+
+export const sobre: Sobre = {
+  titulo: 'Sobre',
+  paragrafos: [
+    'Comecei a programar no segundo período do curso, em um projeto de extensão que digitalizava o controle de estoque de uma cooperativa de Ouro Preto. Desde então trabalho com backend: modelar o banco, escrever a API, manter os testes e acompanhar o comportamento em produção.',
+    'Prefiro código simples e revisado a soluções engenhosas que ninguém entende depois. Fora do curso, participo do grupo de estudos de algoritmos da universidade e corro na serra nos fins de semana.',
+  ],
+  detalhes: [
+    { rotulo: 'Idade', valor: '23 anos' },
+    { rotulo: 'Local', valor: 'Ouro Preto, MG — aberto a remoto' },
+    { rotulo: 'Formação', valor: 'Sistemas de Informação, UFOP — conclusão em 2027' },
+    { rotulo: 'Situação', valor: 'Disponível para estágio ou vaga júnior' },
+  ],
+};

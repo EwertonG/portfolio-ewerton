@@ -3,10 +3,11 @@ import './styles/base.css';
 import './styles/layout.css';
 import './styles/componentes.css';
 import './styles/secoes.css';
-import { menu, perfil } from './data/conteudo';
+import { menu, perfil, sobre } from './data/conteudo';
 import { renderBotaoIdioma } from './componentes/botao-idioma';
 import { renderMenuLateral } from './componentes/menu-lateral';
 import { renderHero } from './secoes/hero';
+import { renderSobre } from './secoes/sobre';
 
 const app = document.querySelector<HTMLDivElement>('#app');
 
@@ -17,5 +18,6 @@ if (app) {
     ${renderBotaoIdioma()}
     <main class="conteudo" id="conteudo">
       ${renderHero(perfil)}
+      ${renderSobre(sobre)}
     </main>`;
 }
