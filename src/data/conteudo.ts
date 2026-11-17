@@ -33,3 +33,8 @@ export const menu: ItemMenu[] = [
   { id: 'habilidades', rotulo: 'Skills' },
   { id: 'contato', rotulo: 'Contato' },
 ];
+
+export interface Detalhe {
+  rotulo: string;
+  valor: string;
+}
