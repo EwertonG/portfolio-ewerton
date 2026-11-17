@@ -1,0 +1,66 @@
+/* Hero */
+.hero {
+  padding-bottom: var(--espaco-24);
+}
+
+.hero__foto {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hero__foto--vazia {
+  display: grid;
+  place-items: center;
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  font-size: var(--texto-sm);
+  letter-spacing: 0.08em;
+  color: var(--cor-texto-fraco);
+}
+
+.hero__nome {
+  margin-top: var(--espaco-8);
+  font-size: var(--texto-titulo);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.hero__resumo {
+  margin-top: var(--espaco-4);
+  font-size: var(--texto-lg);
+  line-height: 1.55;
+  color: var(--cor-texto-suave);
+}
+
+.hero__acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-3);
+  margin-top: var(--espaco-8);
+}
+
+.hero__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-2) var(--espaco-6);
+  margin-top: var(--espaco-8);
+  font-size: var(--texto-sm);
+  color: var(--cor-texto-suave);
+}
+
+.hero__links a {
+  text-decoration: underline;
+  text-decoration-color: var(--cor-borda-forte);
+  text-underline-offset: 4px;
+  transition:
+    color var(--transicao),
+    text-decoration-color var(--transicao);
+}
+
+.hero__links a:hover {
+  color: var(--cor-texto);
+  text-decoration-color: currentColor;
+}
