@@ -61,3 +61,17 @@
 .detalhes dt {
   color: var(--cor-texto-fraco);
 }
+
+/* Tecnologias */
+.tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: var(--espaco-3);
+  font-size: var(--texto-xs);
+  color: var(--cor-texto-fraco);
+}
+
+.tecnologias li + li::before {
+  content: '·';
+  margin-inline: var(--espaco-2);
+}

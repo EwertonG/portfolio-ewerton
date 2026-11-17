@@ -58,3 +58,46 @@ export const sobre: Sobre = {
     { rotulo: 'Situação', valor: 'Disponível para estágio ou vaga júnior' },
   ],
 };
+
+export interface Experiencia {
+  cargo: string;
+  empresa: string;
+  periodo: string;
+  descricao: string;
+  tecnologias: string[];
+}
+
+export interface SecaoExperiencia {
+  titulo: string;
+  itens: Experiencia[];
+}
+
+export const experiencia: SecaoExperiencia = {
+  titulo: 'Experiência',
+  itens: [
+    {
+      cargo: 'Desenvolvedor backend (estágio)',
+      empresa: 'Meridian Sistemas, Belo Horizonte',
+      periodo: '2025 — atual',
+      descricao:
+        'Manutenção e evolução de uma API em Java com Spring Boot usada por três produtos internos. Reescrevi a rotina de importação de arquivos fiscais, que passou de 40 para 9 minutos por lote, e cobri o módulo com testes automatizados.',
+      tecnologias: ['Java', 'Spring Boot', 'PostgreSQL', 'Docker'],
+    },
+    {
+      cargo: 'Desenvolvedor júnior (freelance)',
+      empresa: 'Projetos autônomos',
+      periodo: '2024 — 2025',
+      descricao:
+        'Integrações entre sistemas de gestão e plataformas de venda para dois clientes pequenos: rotinas em Python para sincronizar pedidos e estoque, com registro de erros e reprocessamento manual.',
+      tecnologias: ['Python', 'REST', 'MySQL'],
+    },
+    {
+      cargo: 'Bolsista de projeto de extensão',
+      empresa: 'UFOP — Departamento de Computação',
+      periodo: '2023 — 2024',
+      descricao:
+        'Equipe que construiu um sistema de controle de estoque para uma cooperativa local. Cuidei do modelo de dados e das telas de relatório, em contato direto com os usuários finais.',
+      tecnologias: ['PHP', 'SQL', 'Levantamento de requisitos'],
+    },
+  ],
+};

@@ -71,3 +71,50 @@
   gap: var(--espaco-4);
   margin-bottom: var(--espaco-8);
 }
+
+/* Experiência */
+.experiencia {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.experiencia__item {
+  padding-block: var(--espaco-8);
+  border-top: 1px solid var(--cor-borda);
+}
+
+.experiencia__item:first-child {
+  padding-top: var(--espaco-6);
+}
+
+.experiencia__cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--espaco-4);
+}
+
+.experiencia__cargo {
+  font-size: var(--texto-lg);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.experiencia__periodo {
+  flex-shrink: 0;
+  font-size: var(--texto-xs);
+  color: var(--cor-texto-fraco);
+  font-variant-numeric: tabular-nums;
+}
+
+.experiencia__empresa {
+  margin-top: var(--espaco-1);
+  font-size: var(--texto-sm);
+  color: var(--cor-texto-fraco);
+}
+
+.experiencia__descricao {
+  margin-top: var(--espaco-3);
+  color: var(--cor-texto-suave);
+}
