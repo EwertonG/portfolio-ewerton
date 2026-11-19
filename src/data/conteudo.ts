@@ -154,3 +154,18 @@ export const projetos: SecaoProjetos = {
     },
   ],
 };
+
+export interface SecaoDetalhes {
+  titulo: string;
+  itens: Detalhe[];
+}
+
+export const habilidades: SecaoDetalhes = {
+  titulo: 'Habilidades',
+  itens: [
+    { rotulo: 'Linguagens', valor: 'Java, Python, SQL, JavaScript, PHP' },
+    { rotulo: 'Frameworks', valor: 'Spring Boot, FastAPI, React, Flask' },
+    { rotulo: 'Dados e infra', valor: 'PostgreSQL, MySQL, Docker, AWS (EC2, S3)' },
+    { rotulo: 'Práticas', valor: 'Git e code review, testes automatizados, APIs REST, Scrum' },
+  ],
+};

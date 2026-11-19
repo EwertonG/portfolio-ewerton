@@ -3,11 +3,12 @@ import './styles/base.css';
 import './styles/layout.css';
 import './styles/componentes.css';
 import './styles/secoes.css';
-import { experiencia, menu, perfil, projetos, sobre } from './data/conteudo';
+import { experiencia, habilidades, menu, perfil, projetos, sobre } from './data/conteudo';
 import { renderBotaoIdioma } from './componentes/botao-idioma';
 import { renderMenuLateral } from './componentes/menu-lateral';
 import { renderHero } from './secoes/hero';
 import { renderExperiencia } from './secoes/experiencia';
+import { renderHabilidades } from './secoes/habilidades';
 import { renderProjetos } from './secoes/projetos';
 import { renderSobre } from './secoes/sobre';
 
@@ -23,5 +24,6 @@ if (app) {
       ${renderSobre(sobre)}
       ${renderExperiencia(experiencia)}
       ${renderProjetos(projetos)}
+      ${renderHabilidades(habilidades)}
     </main>`;
 }
