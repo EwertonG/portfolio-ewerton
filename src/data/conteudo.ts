@@ -101,3 +101,84 @@ export const experiencia: SecaoExperiencia = {
     },
   ],
 };
+
+export interface Projeto {
+  nome: string;
+  ano: string;
+  descricao: string;
+  tecnologias: string[];
+  repositorio?: string;
+  demo?: string;
+}
+
+export interface SecaoProjetos {
+  titulo: string;
+  itens: Projeto[];
+}
+
+export const projetos: SecaoProjetos = {
+  titulo: 'Projetos',
+  itens: [
+    {
+      nome: 'Almoxarife',
+      ano: '2026',
+      descricao:
+        'API de controle de estoque multiempresa, com autenticação por token e relatórios mensais em CSV.',
+      tecnologias: ['Java', 'Spring Boot', 'PostgreSQL'],
+      repositorio: 'https://github.com/EwertonG/almoxarife',
+    },
+    {
+      nome: 'Rota Serra',
+      ano: '2025',
+      descricao:
+        'Aplicação web que cruza dados abertos de transporte para sugerir rotas entre distritos de Ouro Preto.',
+      tecnologias: ['Python', 'FastAPI', 'Leaflet'],
+      repositorio: 'https://github.com/EwertonG/rota-serra',
+      demo: 'https://rota-serra.exemplo.com',
+    },
+    {
+      nome: 'Boletim Acadêmico',
+      ano: '2025',
+      descricao:
+        'Painel de notas e frequência feito para a turma, com importação do sistema da universidade.',
+      tecnologias: ['React', 'Node.js', 'SQLite'],
+      repositorio: 'https://github.com/EwertonG/boletim-academico',
+    },
+    {
+      nome: 'Fila Justa',
+      ano: '2024',
+      descricao:
+        'Serviço de senhas para atendimento presencial, com painel de chamada e histórico de espera.',
+      tecnologias: ['Python', 'Flask', 'WebSocket'],
+      repositorio: 'https://github.com/EwertonG/fila-justa',
+    },
+  ],
+};
+
+export interface SecaoDetalhes {
+  titulo: string;
+  itens: Detalhe[];
+}
+
+export const habilidades: SecaoDetalhes = {
+  titulo: 'Habilidades',
+  itens: [
+    { rotulo: 'Linguagens', valor: 'Java, Python, SQL, JavaScript, PHP' },
+    { rotulo: 'Frameworks', valor: 'Spring Boot, FastAPI, React, Flask' },
+    { rotulo: 'Dados e infra', valor: 'PostgreSQL, MySQL, Docker, AWS (EC2, S3)' },
+    { rotulo: 'Práticas', valor: 'Git e code review, testes automatizados, APIs REST, Scrum' },
+  ],
+};
+
+export const certificacoes: SecaoDetalhes = {
+  titulo: 'Certificações e idiomas',
+  itens: [
+    { rotulo: '2025', valor: 'Oracle Certified Foundations Associate — Java' },
+    { rotulo: '2025', valor: 'AWS Certified Cloud Practitioner' },
+    { rotulo: '2024', valor: 'Scrum Foundation Professional Certificate — CertiProf' },
+    {
+      rotulo: 'Idiomas',
+      valor: 'Português nativo · Inglês avançado (B2) · Espanhol básico (A2)',
+    },
+  ],
+};
