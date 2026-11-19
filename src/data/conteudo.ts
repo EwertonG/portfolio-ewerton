@@ -169,3 +169,16 @@ export const habilidades: SecaoDetalhes = {
     { rotulo: 'Práticas', valor: 'Git e code review, testes automatizados, APIs REST, Scrum' },
   ],
 };
+
+export const certificacoes: SecaoDetalhes = {
+  titulo: 'Certificações e idiomas',
+  itens: [
+    { rotulo: '2025', valor: 'Oracle Certified Foundations Associate — Java' },
+    { rotulo: '2025', valor: 'AWS Certified Cloud Practitioner' },
+    { rotulo: '2024', valor: 'Scrum Foundation Professional Certificate — CertiProf' },
+    {
+      rotulo: 'Idiomas',
+      valor: 'Português nativo · Inglês avançado (B2) · Espanhol básico (A2)',
+    },
+  ],
+};
