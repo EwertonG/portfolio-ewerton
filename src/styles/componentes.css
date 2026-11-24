@@ -139,3 +139,17 @@
 .link-pular:focus {
   transform: translateY(0);
 }
+
+/* Revelar ao rolar */
+.revelar {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition:
+    opacity 600ms ease,
+    transform 600ms ease;
+}
+
+.revelar.visivel {
+  opacity: 1;
+  transform: none;
+}
