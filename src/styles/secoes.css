@@ -159,3 +159,32 @@
   line-height: 1.25;
   letter-spacing: -0.015em;
 }
+
+/* Telas pequenas */
+@media (max-width: 640px) {
+  .hero {
+    padding-bottom: var(--espaco-12);
+  }
+
+  .hero__nome {
+    margin-top: var(--espaco-6);
+  }
+
+  .hero__resumo {
+    font-size: var(--texto-base);
+  }
+
+  .experiencia__cabecalho,
+  .projetos__cabecalho {
+    flex-direction: column;
+    gap: var(--espaco-1);
+  }
+
+  .experiencia__empresa {
+    margin-top: 0;
+  }
+
+  .contato {
+    padding-block: var(--espaco-16);
+  }
+}

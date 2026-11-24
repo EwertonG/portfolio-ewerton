@@ -107,3 +107,15 @@
   color: var(--cor-texto);
   text-decoration-color: currentColor;
 }
+
+/* Telas pequenas */
+@media (max-width: 640px) {
+  .secao {
+    padding-block: var(--espaco-12);
+  }
+
+  .detalhes__linha {
+    grid-template-columns: 5.5rem 1fr;
+    gap: var(--espaco-3);
+  }
+}
