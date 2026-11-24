@@ -1,4 +1,4 @@
-import type { Detalhe } from '../data/conteudo';
+import type { Detalhe } from '../data/tipos';
 
 export function renderListaDetalhes(itens: Detalhe[]): string {
   const linhas = itens
