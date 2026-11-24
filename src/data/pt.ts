@@ -125,5 +125,7 @@ export const pt: Conteudo = {
     pularConteudo: 'Pular para o conteúdo',
     secoes: 'Seções',
     tecnologias: 'Tecnologias',
+    outroIdioma: 'EN',
+    trocarIdioma: 'View in English',
   },
 };

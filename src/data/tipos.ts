@@ -71,6 +71,8 @@ export interface Textos {
   pularConteudo: string;
   secoes: string;
   tecnologias: string;
+  outroIdioma: string;
+  trocarIdioma: string;
 }
 
 export interface Conteudo {

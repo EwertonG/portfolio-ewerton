@@ -17,7 +17,7 @@ export function renderPagina(perfil: Perfil, conteudo: Conteudo): string {
   return `
     ${renderLinkPular(textos.pularConteudo)}
     ${renderMenuLateral(conteudo.menu, textos.secoes)}
-    ${renderBotaoIdioma()}
+    ${renderBotaoIdioma(textos.outroIdioma, textos.trocarIdioma)}
     <main class="conteudo" id="conteudo" tabindex="-1">
       ${renderHero(perfil, conteudo.resumo, textos)}
       ${renderSobre(conteudo.sobre)}
