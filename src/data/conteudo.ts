@@ -1,4 +1,5 @@
-import type { Conteudo, Perfil } from './tipos';
+import type { Conteudo, Idioma, Perfil } from './tipos';
+import { en } from './en';
 import { pt } from './pt';
 
 export const perfil: Perfil = {
@@ -11,4 +12,4 @@ export const perfil: Perfil = {
   curriculo: 'curriculo.pdf',
 };
 
-export const conteudo: Conteudo = pt;
+export const conteudos: Record<Idioma, Conteudo> = { pt, en };

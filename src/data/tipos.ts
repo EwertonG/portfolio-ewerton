@@ -84,3 +84,5 @@ export interface Conteudo {
   contato: Contato;
   textos: Textos;
 }
+
+export type Idioma = 'pt' | 'en';
