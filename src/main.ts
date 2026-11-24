@@ -15,6 +15,7 @@ import {
 } from './data/conteudo';
 import { renderBotaoIdioma } from './componentes/botao-idioma';
 import { renderMenuLateral } from './componentes/menu-lateral';
+import { renderRodape } from './componentes/rodape';
 import { renderHero } from './secoes/hero';
 import { renderContato } from './secoes/contato';
 import { renderCertificacoes } from './secoes/certificacoes';
@@ -38,5 +39,6 @@ if (app) {
       ${renderHabilidades(habilidades)}
       ${renderCertificacoes(certificacoes)}
       ${renderContato(contato, perfil)}
-    </main>`;
+    </main>
+    ${renderRodape(perfil, contato)}`;
 }

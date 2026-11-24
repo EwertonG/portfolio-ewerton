@@ -78,3 +78,17 @@
   color: var(--cor-texto);
   border-color: var(--cor-texto-suave);
 }
+
+/* Rodapé */
+.rodape {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--espaco-2) var(--espaco-4);
+  max-width: var(--largura-conteudo);
+  margin-inline: auto;
+  padding-top: var(--espaco-6);
+  border-top: 1px solid var(--cor-borda);
+  font-size: var(--texto-xs);
+  color: var(--cor-texto-fraco);
+}
