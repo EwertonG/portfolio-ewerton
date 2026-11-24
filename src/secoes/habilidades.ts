@@ -1,4 +1,4 @@
-import type { SecaoDetalhes } from '../data/conteudo';
+import type { SecaoDetalhes } from '../data/tipos';
 import { renderListaDetalhes } from '../componentes/lista-detalhes';
 import { renderSecao } from '../componentes/secao';
 

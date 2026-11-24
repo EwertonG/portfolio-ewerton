@@ -1,4 +1,4 @@
-import type { Contato, Perfil } from '../data/conteudo';
+import type { Contato, Perfil } from '../data/tipos';
 
 export function renderRodape(perfil: Perfil, contato: Contato): string {
   const ano = new Date().getFullYear();

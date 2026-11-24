@@ -3,44 +3,43 @@ import './styles/base.css';
 import './styles/layout.css';
 import './styles/componentes.css';
 import './styles/secoes.css';
-import {
-  contato,
-  certificacoes,
-  experiencia,
-  habilidades,
-  menu,
-  perfil,
-  projetos,
-  sobre,
-} from './data/conteudo';
-import { renderBotaoIdioma } from './componentes/botao-idioma';
-import { renderLinkPular } from './componentes/link-pular';
-import { renderMenuLateral } from './componentes/menu-lateral';
-import { renderRodape } from './componentes/rodape';
-import { renderHero } from './secoes/hero';
-import { renderContato } from './secoes/contato';
-import { renderCertificacoes } from './secoes/certificacoes';
-import { renderExperiencia } from './secoes/experiencia';
-import { renderHabilidades } from './secoes/habilidades';
-import { renderProjetos } from './secoes/projetos';
-import { renderSobre } from './secoes/sobre';
+import type { Idioma } from './data/tipos';
+import { conteudos, perfil } from './data/conteudo';
+import { revelarAoRolar } from './efeitos/revelar';
+import { observarSecaoAtiva } from './efeitos/secao-ativa';
+import { codigoIdioma, idiomaInicial, outroIdioma, salvarIdioma } from './i18n';
+import { renderPagina } from './pagina';
 
 const app = document.querySelector<HTMLDivElement>('#app');
+let encerrarEfeitos = (): void => {};
+
+function render(container: HTMLElement, idioma: Idioma, animar: boolean): void {
+  encerrarEfeitos();
+  document.documentElement.lang = codigoIdioma(idioma);
+  container.innerHTML = renderPagina(perfil, conteudos[idioma]);
+
+  const encerrarSecaoAtiva = observarSecaoAtiva(container);
+  const encerrarRevelar = revelarAoRolar(container, animar);
+  encerrarEfeitos = () => {
+    encerrarSecaoAtiva();
+    encerrarRevelar();
+  };
+}
 
 if (app) {
+  let idioma = idiomaInicial();
+
   app.className = 'pagina';
-  app.innerHTML = `
-    ${renderLinkPular()}
-    ${renderMenuLateral(menu)}
-    ${renderBotaoIdioma()}
-    <main class="conteudo" id="conteudo" tabindex="-1">
-      ${renderHero(perfil)}
-      ${renderSobre(sobre)}
-      ${renderExperiencia(experiencia)}
-      ${renderProjetos(projetos)}
-      ${renderHabilidades(habilidades)}
-      ${renderCertificacoes(certificacoes)}
-      ${renderContato(contato, perfil)}
-    </main>
-    ${renderRodape(perfil, contato)}`;
+  render(app, idioma, true);
+
+  app.addEventListener('click', (evento) => {
+    if (!(evento.target instanceof Element) || !evento.target.closest('.botao-idioma')) {
+      return;
+    }
+
+    idioma = outroIdioma(idioma);
+    salvarIdioma(idioma);
+    render(app, idioma, false);
+    app.querySelector<HTMLButtonElement>('.botao-idioma')?.focus();
+  });
 }

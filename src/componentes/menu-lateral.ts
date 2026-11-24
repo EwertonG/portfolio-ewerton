@@ -1,6 +1,6 @@
-import type { ItemMenu } from '../data/conteudo';
+import type { ItemMenu } from '../data/tipos';
 
-export function renderMenuLateral(itens: ItemMenu[]): string {
+export function renderMenuLateral(itens: ItemMenu[], rotulo: string): string {
   const links = itens
     .map(
       (item) => `
@@ -11,7 +11,7 @@ export function renderMenuLateral(itens: ItemMenu[]): string {
     .join('');
 
   return `
-    <nav class="menu-lateral" aria-label="Seções">
+    <nav class="menu-lateral" aria-label="${rotulo}">
       <ul class="menu-lateral__lista">${links}</ul>
     </nav>`;
 }
