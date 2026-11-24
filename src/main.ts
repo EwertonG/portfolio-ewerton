@@ -4,6 +4,7 @@ import './styles/layout.css';
 import './styles/componentes.css';
 import './styles/secoes.css';
 import {
+  contato,
   certificacoes,
   experiencia,
   habilidades,
@@ -15,6 +16,7 @@ import {
 import { renderBotaoIdioma } from './componentes/botao-idioma';
 import { renderMenuLateral } from './componentes/menu-lateral';
 import { renderHero } from './secoes/hero';
+import { renderContato } from './secoes/contato';
 import { renderCertificacoes } from './secoes/certificacoes';
 import { renderExperiencia } from './secoes/experiencia';
 import { renderHabilidades } from './secoes/habilidades';
@@ -35,5 +37,6 @@ if (app) {
       ${renderProjetos(projetos)}
       ${renderHabilidades(habilidades)}
       ${renderCertificacoes(certificacoes)}
+      ${renderContato(contato, perfil)}
     </main>`;
 }

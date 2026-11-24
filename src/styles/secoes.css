@@ -146,3 +146,16 @@
   color: var(--cor-texto);
   text-decoration-color: currentColor;
 }
+
+/* Contato */
+.contato {
+  padding-block: var(--espaco-24);
+}
+
+.contato__chamada {
+  max-width: 28rem;
+  font-size: clamp(1.5rem, 1.2rem + 1.2vw, 1.875rem);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+}

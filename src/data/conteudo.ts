@@ -182,3 +182,13 @@ export const certificacoes: SecaoDetalhes = {
     },
   ],
 };
+
+export interface Contato {
+  chamada: string;
+  local: string;
+}
+
+export const contato: Contato = {
+  chamada: 'Disponível para vagas de backend júnior ou estágio, presencial em Minas ou remoto.',
+  local: 'Ouro Preto, MG',
+};
