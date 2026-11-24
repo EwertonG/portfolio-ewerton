@@ -14,6 +14,7 @@ import {
   sobre,
 } from './data/conteudo';
 import { renderBotaoIdioma } from './componentes/botao-idioma';
+import { renderLinkPular } from './componentes/link-pular';
 import { renderMenuLateral } from './componentes/menu-lateral';
 import { renderRodape } from './componentes/rodape';
 import { renderHero } from './secoes/hero';
@@ -29,9 +30,10 @@ const app = document.querySelector<HTMLDivElement>('#app');
 if (app) {
   app.className = 'pagina';
   app.innerHTML = `
+    ${renderLinkPular()}
     ${renderMenuLateral(menu)}
     ${renderBotaoIdioma()}
-    <main class="conteudo" id="conteudo">
+    <main class="conteudo" id="conteudo" tabindex="-1">
       ${renderHero(perfil)}
       ${renderSobre(sobre)}
       ${renderExperiencia(experiencia)}

@@ -119,3 +119,23 @@
     gap: var(--espaco-3);
   }
 }
+
+/* Link para pular ao conteúdo */
+.link-pular {
+  position: fixed;
+  top: var(--espaco-4);
+  left: var(--espaco-4);
+  z-index: 10;
+  padding: var(--espaco-2) var(--espaco-4);
+  border-radius: var(--raio);
+  background: var(--cor-destaque);
+  color: var(--cor-destaque-texto);
+  font-size: var(--texto-sm);
+  font-weight: 500;
+  transform: translateY(-200%);
+  transition: transform var(--transicao);
+}
+
+.link-pular:focus {
+  transform: translateY(0);
+}

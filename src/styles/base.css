@@ -60,3 +60,7 @@ button {
   background: var(--cor-destaque);
   color: var(--cor-destaque-texto);
 }
+
+main:focus {
+  outline: none;
+}
