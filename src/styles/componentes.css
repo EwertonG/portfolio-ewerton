@@ -75,3 +75,35 @@
   content: '·';
   margin-inline: var(--espaco-2);
 }
+
+/* Ações */
+.acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-3);
+  margin-top: var(--espaco-8);
+}
+
+/* Links */
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-2) var(--espaco-6);
+  margin-top: var(--espaco-8);
+  font-size: var(--texto-sm);
+  color: var(--cor-texto-suave);
+}
+
+.links a {
+  text-decoration: underline;
+  text-decoration-color: var(--cor-borda-forte);
+  text-underline-offset: 4px;
+  transition:
+    color var(--transicao),
+    text-decoration-color var(--transicao);
+}
+
+.links a:hover {
+  color: var(--cor-texto);
+  text-decoration-color: currentColor;
+}

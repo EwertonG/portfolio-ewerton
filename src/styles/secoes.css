@@ -35,36 +35,6 @@
   color: var(--cor-texto-suave);
 }
 
-.hero__acoes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--espaco-3);
-  margin-top: var(--espaco-8);
-}
-
-.hero__links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--espaco-2) var(--espaco-6);
-  margin-top: var(--espaco-8);
-  font-size: var(--texto-sm);
-  color: var(--cor-texto-suave);
-}
-
-.hero__links a {
-  text-decoration: underline;
-  text-decoration-color: var(--cor-borda-forte);
-  text-underline-offset: 4px;
-  transition:
-    color var(--transicao),
-    text-decoration-color var(--transicao);
-}
-
-.hero__links a:hover {
-  color: var(--cor-texto);
-  text-decoration-color: currentColor;
-}
-
 /* Sobre */
 .sobre__texto {
   display: grid;
