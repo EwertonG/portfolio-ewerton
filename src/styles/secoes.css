@@ -35,36 +35,6 @@
   color: var(--cor-texto-suave);
 }
 
-.hero__acoes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--espaco-3);
-  margin-top: var(--espaco-8);
-}
-
-.hero__links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--espaco-2) var(--espaco-6);
-  margin-top: var(--espaco-8);
-  font-size: var(--texto-sm);
-  color: var(--cor-texto-suave);
-}
-
-.hero__links a {
-  text-decoration: underline;
-  text-decoration-color: var(--cor-borda-forte);
-  text-underline-offset: 4px;
-  transition:
-    color var(--transicao),
-    text-decoration-color var(--transicao);
-}
-
-.hero__links a:hover {
-  color: var(--cor-texto);
-  text-decoration-color: currentColor;
-}
-
 /* Sobre */
 .sobre__texto {
   display: grid;
@@ -175,4 +145,46 @@
 .projetos__links a:hover {
   color: var(--cor-texto);
   text-decoration-color: currentColor;
+}
+
+/* Contato */
+.contato {
+  padding-block: var(--espaco-24);
+}
+
+.contato__chamada {
+  max-width: 28rem;
+  font-size: clamp(1.5rem, 1.2rem + 1.2vw, 1.875rem);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+}
+
+/* Telas pequenas */
+@media (max-width: 640px) {
+  .hero {
+    padding-bottom: var(--espaco-12);
+  }
+
+  .hero__nome {
+    margin-top: var(--espaco-6);
+  }
+
+  .hero__resumo {
+    font-size: var(--texto-base);
+  }
+
+  .experiencia__cabecalho,
+  .projetos__cabecalho {
+    flex-direction: column;
+    gap: var(--espaco-1);
+  }
+
+  .experiencia__empresa {
+    margin-top: 0;
+  }
+
+  .contato {
+    padding-block: var(--espaco-16);
+  }
 }

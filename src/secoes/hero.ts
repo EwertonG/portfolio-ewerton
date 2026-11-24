@@ -1,4 +1,6 @@
 import type { Perfil } from '../data/conteudo';
+import { renderAcoes } from '../componentes/acoes';
+import { renderLinks } from '../componentes/links';
 
 function renderFoto(perfil: Perfil): string {
   if (perfil.foto) {
@@ -14,14 +16,11 @@ export function renderHero(perfil: Perfil): string {
       ${renderFoto(perfil)}
       <h1 class="hero__nome">${perfil.nome}</h1>
       <p class="hero__resumo">${perfil.resumo}</p>
-      <div class="hero__acoes">
-        <a class="botao botao--primario" href="#contato">Fale comigo <span aria-hidden="true">→</span></a>
-        <a class="botao" href="${import.meta.env.BASE_URL}${perfil.curriculo}" target="_blank" rel="noopener">Currículo</a>
-      </div>
-      <ul class="hero__links">
-        <li><a href="mailto:${perfil.email}">${perfil.email}</a></li>
-        <li><a href="${perfil.github}" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="${perfil.linkedin}" target="_blank" rel="noopener">LinkedIn</a></li>
-      </ul>
+      ${renderAcoes(perfil, '#contato')}
+      ${renderLinks([
+        { rotulo: perfil.email, url: `mailto:${perfil.email}` },
+        { rotulo: 'GitHub', url: perfil.github, externo: true },
+        { rotulo: 'LinkedIn', url: perfil.linkedin, externo: true },
+      ])}
     </header>`;
 }
