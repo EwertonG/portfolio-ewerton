@@ -5,14 +5,18 @@ import './styles/componentes.css';
 import './styles/secoes.css';
 import type { Idioma } from './data/tipos';
 import { conteudos, perfil } from './data/conteudo';
+import { observarSecaoAtiva } from './efeitos/secao-ativa';
 import { codigoIdioma, idiomaInicial, outroIdioma, salvarIdioma } from './i18n';
 import { renderPagina } from './pagina';
 
 const app = document.querySelector<HTMLDivElement>('#app');
+let encerrarEfeitos = (): void => {};
 
 function render(container: HTMLElement, idioma: Idioma): void {
+  encerrarEfeitos();
   document.documentElement.lang = codigoIdioma(idioma);
   container.innerHTML = renderPagina(perfil, conteudos[idioma]);
+  encerrarEfeitos = observarSecaoAtiva(container);
 }
 
 if (app) {
