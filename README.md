@@ -1,22 +1,13 @@
 # Portfolio — Ewerton Gomes Barcia
 
-Portfolio pessoal de Ewerton Gomes Barcia, desenvolvedor fullstack júnior com React, TypeScript, Node.js e C#/.NET.
+Meu portfolio pessoal, desenvolvedor fullstack júnior com React, TypeScript, Node.js e C#/.NET.
 
 **Acesse:** https://ewertong.github.io/portfolio-ewerton/
 
-## Funcionalidades
-
-- Página única com apresentação, sobre, experiência, projetos, habilidades, formação e contato
-- Conteúdo em português e inglês, com troca pelo botão no topo e preferência salva no navegador
-- Menu lateral que destaca a seção visível
-- Animação de entrada das seções, desativada para quem prefere menos movimento
-- Layout responsivo e acessível (link para pular ao conteúdo, foco visível, contraste AA)
-
 ## Tecnologias
 
-- [Vite](https://vite.dev/) + TypeScript, sem framework
+- TypeScript
 - CSS puro com variáveis de design
-- Prettier e EditorConfig
 - GitHub Actions + GitHub Pages
 
 ## Como rodar
