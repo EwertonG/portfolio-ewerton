@@ -116,6 +116,9 @@ export const en: Conteudo = {
     local: 'João Monlevade, Brazil',
   },
   textos: {
+    tituloPagina: 'Ewerton Gomes Barcia — Fullstack developer',
+    descricaoPagina:
+      'Portfolio of Ewerton Gomes Barcia, junior fullstack developer working with React, TypeScript, Node.js and C#/.NET.',
     faleComigo: 'Get in touch',
     curriculo: 'Résumé',
     links: { codigo: 'Code', demo: 'Demo', pullRequest: 'Pull Request' },

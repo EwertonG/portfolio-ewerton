@@ -68,6 +68,8 @@ export interface Contato {
 }
 
 export interface Textos {
+  tituloPagina: string;
+  descricaoPagina: string;
   faleComigo: string;
   curriculo: string;
   links: Record<TipoLink, string>;
