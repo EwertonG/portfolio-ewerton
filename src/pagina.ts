@@ -3,7 +3,7 @@ import { renderBotaoIdioma } from './componentes/botao-idioma';
 import { renderLinkPular } from './componentes/link-pular';
 import { renderMenuLateral } from './componentes/menu-lateral';
 import { renderRodape } from './componentes/rodape';
-import { renderCertificacoes } from './secoes/certificacoes';
+import { renderFormacao } from './secoes/formacao';
 import { renderContato } from './secoes/contato';
 import { renderExperiencia } from './secoes/experiencia';
 import { renderHabilidades } from './secoes/habilidades';
@@ -24,7 +24,7 @@ export function renderPagina(perfil: Perfil, conteudo: Conteudo): string {
       ${renderExperiencia(conteudo.experiencia, textos)}
       ${renderProjetos(conteudo.projetos, textos)}
       ${renderHabilidades(conteudo.habilidades)}
-      ${renderCertificacoes(conteudo.certificacoes)}
+      ${renderFormacao(conteudo.formacao)}
       ${renderContato(conteudo.contato, perfil, textos)}
     </main>
     ${renderRodape(perfil, conteudo.contato)}`;

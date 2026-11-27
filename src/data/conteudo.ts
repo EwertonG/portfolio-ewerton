@@ -6,9 +6,9 @@ export const perfil: Perfil = {
   nome: 'Ewerton Gomes Barcia',
   iniciais: 'EB',
   foto: null,
-  email: 'ewerton.barcia@exemplo.com',
+  email: 'ewerton.gbarcia@gmail.com',
   github: 'https://github.com/EwertonG',
-  linkedin: 'https://www.linkedin.com/',
+  linkedin: 'https://www.linkedin.com/in/ewertong',
   curriculo: 'curriculo.pdf',
 };
 

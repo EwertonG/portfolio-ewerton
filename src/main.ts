@@ -15,8 +15,14 @@ let encerrarEfeitos = (): void => {};
 
 function render(container: HTMLElement, idioma: Idioma, animar: boolean): void {
   encerrarEfeitos();
+  const conteudo = conteudos[idioma];
+
   document.documentElement.lang = codigoIdioma(idioma);
-  container.innerHTML = renderPagina(perfil, conteudos[idioma]);
+  document.title = conteudo.textos.tituloPagina;
+  document
+    .querySelector('meta[name="description"]')
+    ?.setAttribute('content', conteudo.textos.descricaoPagina);
+  container.innerHTML = renderPagina(perfil, conteudo);
 
   const encerrarSecaoAtiva = observarSecaoAtiva(container);
   const encerrarRevelar = revelarAoRolar(container, animar);

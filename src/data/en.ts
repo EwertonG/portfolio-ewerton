@@ -2,7 +2,7 @@ import type { Conteudo } from './tipos';
 
 export const en: Conteudo = {
   resumo:
-    'Information Systems student at UFOP, 23 years old. Backend development and system integrations with Java, Python and SQL. Looking for a junior developer position.',
+    'Junior fullstack developer working with React, TypeScript, Node.js and C#/.NET. Information Systems student at UFOP and co-founder of Opus Automação e Dados.',
   menu: [
     { id: 'sobre', rotulo: 'About' },
     { id: 'experiencia', rotulo: 'Exp' },
@@ -13,42 +13,42 @@ export const en: Conteudo = {
   sobre: {
     titulo: 'About',
     paragrafos: [
-      'I started programming in my second semester, on a university outreach project that digitized inventory control for a cooperative in Ouro Preto. Since then I have worked on the backend: modeling the database, writing the API, maintaining the tests and monitoring behavior in production.',
-      'I prefer simple, reviewed code over clever solutions nobody understands later. Outside class, I take part in the university’s algorithms study group and go trail running in the hills on weekends.',
+      'I started in tech as an IT intern at Unimed João Monlevade, supporting staff and clinics. Today I work on fullstack development: React and TypeScript on the front end, Node.js and C#/.NET on the back end, building REST APIs, web interfaces and robust, scalable database solutions.',
+      'I am a co-founder of Opus Automação e Dados, where I build custom software and process automation for companies. I also contribute to open source projects and have been exploring generative AI with LangChain and LLM APIs.',
     ],
     detalhes: [
-      { rotulo: 'Age', valor: '23' },
-      { rotulo: 'Location', valor: 'Ouro Preto, Brazil — open to remote' },
-      { rotulo: 'Education', valor: 'Information Systems, UFOP — graduating in 2027' },
-      { rotulo: 'Status', valor: 'Available for internships or junior roles' },
+      { rotulo: 'Location', valor: 'João Monlevade, Brazil' },
+      { rotulo: 'Focus', valor: 'Fullstack — React, TypeScript, Node.js and C#/.NET' },
+      { rotulo: 'Education', valor: 'Information Systems, UFOP — expected Dec 2027' },
+      { rotulo: 'Languages', valor: 'Portuguese (native) · English (advanced)' },
     ],
   },
   experiencia: {
     titulo: 'Experience',
     itens: [
       {
-        cargo: 'Backend developer (intern)',
-        empresa: 'Meridian Sistemas, Belo Horizonte',
-        periodo: '2025 — present',
+        cargo: 'Co-founder & fullstack developer',
+        empresa: 'Opus Automação e Dados · Remote',
+        periodo: '2026 — present',
         descricao:
-          'Maintaining and evolving a Java Spring Boot API used by three internal products. Rewrote the tax file import routine, cutting batch time from 40 to 9 minutes, and covered the module with automated tests.',
-        tecnologias: ['Java', 'Spring Boot', 'PostgreSQL', 'Docker'],
+          'Tech startup focused on custom software development and process automation for client companies. Built the HR web system for a beverage company, replacing manual spreadsheet tracking with automated employee and timesheet management.',
+        tecnologias: [],
       },
       {
-        cargo: 'Junior developer (freelance)',
-        empresa: 'Independent projects',
-        periodo: '2024 — 2025',
+        cargo: 'Technology intern',
+        empresa: 'DOMVS iT · Remote — São Paulo, Brazil',
+        periodo: 'Dec 2025 — Oct 2026',
         descricao:
-          'Integrations between management systems and sales platforms for two small clients: Python routines to sync orders and inventory, with error logging and manual reprocessing.',
-        tecnologias: ['Python', 'REST', 'MySQL'],
+          'Fullstack development with React on the front end and C#/.NET on the back end. Built a system for managing allocated staff using Clean Architecture and CQRS, creating dynamic interfaces, microservices and REST API integrations.',
+        tecnologias: ['React', 'C#/.NET', 'Clean Architecture', 'CQRS', 'REST APIs'],
       },
       {
-        cargo: 'Outreach project fellow',
-        empresa: 'UFOP — Department of Computing',
-        periodo: '2023 — 2024',
+        cargo: 'IT intern',
+        empresa: 'Unimed João Monlevade · On-site — João Monlevade, Brazil',
+        periodo: 'Nov 2023 — Nov 2025',
         descricao:
-          'Team that built an inventory control system for a local cooperative. I was responsible for the data model and the report screens, working directly with end users.',
-        tecnologias: ['PHP', 'SQL', 'Requirements gathering'],
+          'Technical support for staff and clinics, system maintenance and backup routines.',
+        tecnologias: [],
       },
     ],
   },
@@ -56,71 +56,72 @@ export const en: Conteudo = {
     titulo: 'Projects',
     itens: [
       {
-        nome: 'Almoxarife',
+        nome: 'CentralFinanças',
         ano: '2026',
         descricao:
-          'Multi-company inventory control API with token authentication and monthly CSV reports.',
-        tecnologias: ['Java', 'Spring Boot', 'PostgreSQL'],
-        repositorio: 'https://github.com/EwertonG/almoxarife',
+          'Personal finance platform for tracking income, expenses and savings by category. Built with a Pull Request workflow and CI on GitHub Actions, deployed on Vercel, Railway and Neon.',
+        tecnologias: ['React', 'TypeScript', 'Vite', 'Material UI', 'Node.js', 'PostgreSQL'],
+        links: [
+          { tipo: 'codigo', url: 'https://github.com/EwertonG/finance-hub' },
+          { tipo: 'demo', url: 'https://finance-hub-ewerton4.vercel.app' },
+        ],
       },
       {
-        nome: 'Rota Serra',
-        ano: '2025',
+        nome: 'Ewerton MedAgent',
+        ano: '2026',
         descricao:
-          'Web app that combines open transit data to suggest routes between the districts of Ouro Preto.',
-        tecnologias: ['Python', 'FastAPI', 'Leaflet'],
-        repositorio: 'https://github.com/EwertonG/rota-serra',
-        demo: 'https://rota-serra.exemplo.com',
+          'Generative AI assistant for clinics that answers questions from the clinic’s knowledge base and books appointments, validating specialty, doctor, business day and time slot while preventing scheduling conflicts.',
+        tecnologias: ['Python', 'FastAPI', 'LangChain', 'React', 'TypeScript', 'PostgreSQL'],
+        links: [{ tipo: 'codigo', url: 'https://github.com/EwertonG/Ewerton-MedAgent' }],
       },
       {
-        nome: 'Boletim Acadêmico',
-        ano: '2025',
+        nome: 'BabyBuddy — open source contribution',
+        ano: '2026',
         descricao:
-          'Grades and attendance dashboard built for my class, importing data from the university system.',
-        tecnologias: ['React', 'Node.js', 'SQLite'],
-        repositorio: 'https://github.com/EwertonG/boletim-academico',
-      },
-      {
-        nome: 'Fila Justa',
-        ano: '2024',
-        descricao:
-          'Ticketing service for in-person service desks, with a call display and wait-time history.',
-        tecnologias: ['Python', 'Flask', 'WebSocket'],
-        repositorio: 'https://github.com/EwertonG/fila-justa',
+          'Pull Request merged into the official repository (2.9k+ stars), fixing active timers getting out of sync across sessions and devices.',
+        tecnologias: ['Python', 'Django', 'Django REST Framework', 'JavaScript'],
+        links: [{ tipo: 'pullRequest', url: 'https://github.com/babybuddy/babybuddy/pull/1089' }],
       },
     ],
   },
   habilidades: {
     titulo: 'Skills',
     itens: [
-      { rotulo: 'Languages', valor: 'Java, Python, SQL, JavaScript, PHP' },
-      { rotulo: 'Frameworks', valor: 'Spring Boot, FastAPI, React, Flask' },
-      { rotulo: 'Data & infra', valor: 'PostgreSQL, MySQL, Docker, AWS (EC2, S3)' },
-      { rotulo: 'Practices', valor: 'Git and code review, automated testing, REST APIs, Scrum' },
+      { rotulo: 'Front end', valor: 'React, TypeScript, HTML, CSS, Vite, Material UI' },
+      {
+        rotulo: 'Back end',
+        valor:
+          'C#/.NET (ASP.NET, REST APIs, CQRS), Python, JavaScript, Node.js (Express, Sequelize, Prisma)',
+      },
+      { rotulo: 'Databases', valor: 'PostgreSQL, SQL, MongoDB, Firebase' },
+      { rotulo: 'Deploy & infra', valor: 'Vercel, Railway, Neon, Docker, CI/CD' },
+      { rotulo: 'DevOps', valor: 'Git and Git Flow, GitHub Actions, Azure DevOps, Scrum' },
+      { rotulo: 'AI', valor: 'LangChain, LLM API integration' },
     ],
   },
-  certificacoes: {
-    titulo: 'Certifications & languages',
+  formacao: {
+    titulo: 'Education & languages',
     itens: [
-      { rotulo: '2025', valor: 'Oracle Certified Foundations Associate — Java' },
-      { rotulo: '2025', valor: 'AWS Certified Cloud Practitioner' },
-      { rotulo: '2024', valor: 'Scrum Foundation Professional Certificate — CertiProf' },
       {
-        rotulo: 'Languages',
-        valor: 'Portuguese (native) · English (advanced, B2) · Spanish (basic, A2)',
+        rotulo: 'Degree',
+        valor:
+          'B.S. in Information Systems — UFOP, João Monlevade · 6th semester, expected Dec 2027',
       },
+      { rotulo: 'English', valor: 'Advanced — Choice English School (2016–2022)' },
+      { rotulo: 'Portuguese', valor: 'Native' },
     ],
   },
   contato: {
-    chamada:
-      'Available for junior backend roles or internships, on-site in Minas Gerais or remote.',
-    local: 'Ouro Preto, Brazil',
+    chamada: 'Open to opportunities as a junior fullstack developer.',
+    local: 'João Monlevade, Brazil',
   },
   textos: {
+    tituloPagina: 'Ewerton Gomes Barcia — Fullstack developer',
+    descricaoPagina:
+      'Portfolio of Ewerton Gomes Barcia, junior fullstack developer working with React, TypeScript, Node.js and C#/.NET.',
     faleComigo: 'Get in touch',
     curriculo: 'Résumé',
-    codigo: 'Code',
-    demo: 'Demo',
+    links: { codigo: 'Code', demo: 'Demo', pullRequest: 'Pull Request' },
     de: 'for',
     fotoDe: 'Photo of',
     pularConteudo: 'Skip to content',

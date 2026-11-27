@@ -2,7 +2,7 @@ import type { Conteudo } from './tipos';
 
 export const pt: Conteudo = {
   resumo:
-    'Estudante de Sistemas de Informação na UFOP, 23 anos. Desenvolvimento backend e integrações entre sistemas, com Java, Python e SQL. À procura de uma vaga de desenvolvedor júnior.',
+    'Desenvolvedor fullstack júnior com React, TypeScript, Node.js e C#/.NET. Estudante de Sistemas de Informação na UFOP e cofundador da Opus Automação e Dados.',
   menu: [
     { id: 'sobre', rotulo: 'Sobre' },
     { id: 'experiencia', rotulo: 'Exp' },
@@ -13,42 +13,42 @@ export const pt: Conteudo = {
   sobre: {
     titulo: 'Sobre',
     paragrafos: [
-      'Comecei a programar no segundo período do curso, em um projeto de extensão que digitalizava o controle de estoque de uma cooperativa de Ouro Preto. Desde então trabalho com backend: modelar o banco, escrever a API, manter os testes e acompanhar o comportamento em produção.',
-      'Prefiro código simples e revisado a soluções engenhosas que ninguém entende depois. Fora do curso, participo do grupo de estudos de algoritmos da universidade e corro na serra nos fins de semana.',
+      'Comecei na tecnologia como estagiário de T.I na Unimed João Monlevade, dando suporte a colaboradores e clínicas. Hoje trabalho com desenvolvimento fullstack: React e TypeScript no front-end, Node.js e C#/.NET no back-end, construindo APIs REST, interfaces web e soluções de banco de dados robustas e escaláveis.',
+      'Sou cofundador da Opus Automação e Dados, onde desenvolvo software sob demanda e automações de processos para empresas. Também contribuo com projetos open source e tenho explorado IA generativa com LangChain e APIs de LLM.',
     ],
     detalhes: [
-      { rotulo: 'Idade', valor: '23 anos' },
-      { rotulo: 'Local', valor: 'Ouro Preto, MG — aberto a remoto' },
-      { rotulo: 'Formação', valor: 'Sistemas de Informação, UFOP — conclusão em 2027' },
-      { rotulo: 'Situação', valor: 'Disponível para estágio ou vaga júnior' },
+      { rotulo: 'Local', valor: 'João Monlevade, MG' },
+      { rotulo: 'Foco', valor: 'Fullstack — React, TypeScript, Node.js e C#/.NET' },
+      { rotulo: 'Formação', valor: 'Sistemas de Informação, UFOP — previsão em 12/2027' },
+      { rotulo: 'Idiomas', valor: 'Português nativo · Inglês avançado' },
     ],
   },
   experiencia: {
     titulo: 'Experiência',
     itens: [
       {
-        cargo: 'Desenvolvedor backend (estágio)',
-        empresa: 'Meridian Sistemas, Belo Horizonte',
-        periodo: '2025 — atual',
+        cargo: 'Cofundador & desenvolvedor fullstack',
+        empresa: 'Opus Automação e Dados · Remoto',
+        periodo: '2026 — atual',
         descricao:
-          'Manutenção e evolução de uma API em Java com Spring Boot usada por três produtos internos. Reescrevi a rotina de importação de arquivos fiscais, que passou de 40 para 9 minutos por lote, e cobri o módulo com testes automatizados.',
-        tecnologias: ['Java', 'Spring Boot', 'PostgreSQL', 'Docker'],
+          'Startup de tecnologia voltada ao desenvolvimento de software sob demanda e automação de processos para empresas clientes. Desenvolvi o sistema web de RH de uma empresa do ramo de bebidas, substituindo o controle manual em planilhas por gestão automatizada de funcionários e folha de ponto.',
+        tecnologias: [],
       },
       {
-        cargo: 'Desenvolvedor júnior (freelance)',
-        empresa: 'Projetos autônomos',
-        periodo: '2024 — 2025',
+        cargo: 'Estagiário de tecnologia',
+        empresa: 'DOMVS iT · Remoto — São Paulo, SP',
+        periodo: 'dez 2025 — out 2026',
         descricao:
-          'Integrações entre sistemas de gestão e plataformas de venda para dois clientes pequenos: rotinas em Python para sincronizar pedidos e estoque, com registro de erros e reprocessamento manual.',
-        tecnologias: ['Python', 'REST', 'MySQL'],
+          'Desenvolvimento fullstack com React no front-end e C#/.NET no back-end. Desenvolvi um sistema de gestão de colaboradores alocados com Clean Architecture e CQRS, criando interfaces dinâmicas, microsserviços e consumo de APIs REST.',
+        tecnologias: ['React', 'C#/.NET', 'Clean Architecture', 'CQRS', 'APIs REST'],
       },
       {
-        cargo: 'Bolsista de projeto de extensão',
-        empresa: 'UFOP — Departamento de Computação',
-        periodo: '2023 — 2024',
+        cargo: 'Estagiário de T.I',
+        empresa: 'Unimed João Monlevade · Presencial — João Monlevade, MG',
+        periodo: 'nov 2023 — nov 2025',
         descricao:
-          'Equipe que construiu um sistema de controle de estoque para uma cooperativa local. Cuidei do modelo de dados e das telas de relatório, em contato direto com os usuários finais.',
-        tecnologias: ['PHP', 'SQL', 'Levantamento de requisitos'],
+          'Suporte técnico a colaboradores e clínicas, manutenção de sistemas e rotinas de backup.',
+        tecnologias: [],
       },
     ],
   },
@@ -56,70 +56,72 @@ export const pt: Conteudo = {
     titulo: 'Projetos',
     itens: [
       {
-        nome: 'Almoxarife',
+        nome: 'CentralFinanças',
         ano: '2026',
         descricao:
-          'API de controle de estoque multiempresa, com autenticação por token e relatórios mensais em CSV.',
-        tecnologias: ['Java', 'Spring Boot', 'PostgreSQL'],
-        repositorio: 'https://github.com/EwertonG/almoxarife',
+          'Plataforma de finanças pessoais com controle de entradas, saídas e reservas por categoria. Desenvolvida com fluxo de Pull Requests e CI no GitHub Actions, com deploy em Vercel, Railway e Neon.',
+        tecnologias: ['React', 'TypeScript', 'Vite', 'Material UI', 'Node.js', 'PostgreSQL'],
+        links: [
+          { tipo: 'codigo', url: 'https://github.com/EwertonG/finance-hub' },
+          { tipo: 'demo', url: 'https://finance-hub-ewerton4.vercel.app' },
+        ],
       },
       {
-        nome: 'Rota Serra',
-        ano: '2025',
+        nome: 'Ewerton MedAgent',
+        ano: '2026',
         descricao:
-          'Aplicação web que cruza dados abertos de transporte para sugerir rotas entre distritos de Ouro Preto.',
-        tecnologias: ['Python', 'FastAPI', 'Leaflet'],
-        repositorio: 'https://github.com/EwertonG/rota-serra',
-        demo: 'https://rota-serra.exemplo.com',
+          'Assistente de IA generativa para clínicas que responde dúvidas a partir da base de conhecimento e agenda consultas, validando especialidade, médico, dia útil e horário e evitando conflitos de agenda.',
+        tecnologias: ['Python', 'FastAPI', 'LangChain', 'React', 'TypeScript', 'PostgreSQL'],
+        links: [{ tipo: 'codigo', url: 'https://github.com/EwertonG/Ewerton-MedAgent' }],
       },
       {
-        nome: 'Boletim Acadêmico',
-        ano: '2025',
+        nome: 'BabyBuddy — contribuição open source',
+        ano: '2026',
         descricao:
-          'Painel de notas e frequência feito para a turma, com importação do sistema da universidade.',
-        tecnologias: ['React', 'Node.js', 'SQLite'],
-        repositorio: 'https://github.com/EwertonG/boletim-academico',
-      },
-      {
-        nome: 'Fila Justa',
-        ano: '2024',
-        descricao:
-          'Serviço de senhas para atendimento presencial, com painel de chamada e histórico de espera.',
-        tecnologias: ['Python', 'Flask', 'WebSocket'],
-        repositorio: 'https://github.com/EwertonG/fila-justa',
+          'Pull Request aceito no repositório oficial (2,9 mil+ estrelas), corrigindo um erro de dessincronização de timers ativos entre sessões e dispositivos.',
+        tecnologias: ['Python', 'Django', 'Django REST Framework', 'JavaScript'],
+        links: [{ tipo: 'pullRequest', url: 'https://github.com/babybuddy/babybuddy/pull/1089' }],
       },
     ],
   },
   habilidades: {
     titulo: 'Habilidades',
     itens: [
-      { rotulo: 'Linguagens', valor: 'Java, Python, SQL, JavaScript, PHP' },
-      { rotulo: 'Frameworks', valor: 'Spring Boot, FastAPI, React, Flask' },
-      { rotulo: 'Dados e infra', valor: 'PostgreSQL, MySQL, Docker, AWS (EC2, S3)' },
-      { rotulo: 'Práticas', valor: 'Git e code review, testes automatizados, APIs REST, Scrum' },
+      { rotulo: 'Front-end', valor: 'React, TypeScript, HTML, CSS, Vite, Material UI' },
+      {
+        rotulo: 'Back-end',
+        valor:
+          'C#/.NET (ASP.NET, APIs REST, CQRS), Python, JavaScript, Node.js (Express, Sequelize, Prisma)',
+      },
+      { rotulo: 'Banco de dados', valor: 'PostgreSQL, SQL, MongoDB, Firebase' },
+      { rotulo: 'Deploy e infra', valor: 'Vercel, Railway, Neon, Docker, CI/CD' },
+      { rotulo: 'DevOps', valor: 'Git e Git Flow, GitHub Actions, Azure DevOps, Scrum' },
+      { rotulo: 'IA', valor: 'LangChain, integração com APIs de LLM' },
     ],
   },
-  certificacoes: {
-    titulo: 'Certificações e idiomas',
+  formacao: {
+    titulo: 'Formação e idiomas',
     itens: [
-      { rotulo: '2025', valor: 'Oracle Certified Foundations Associate — Java' },
-      { rotulo: '2025', valor: 'AWS Certified Cloud Practitioner' },
-      { rotulo: '2024', valor: 'Scrum Foundation Professional Certificate — CertiProf' },
       {
-        rotulo: 'Idiomas',
-        valor: 'Português nativo · Inglês avançado (B2) · Espanhol básico (A2)',
+        rotulo: 'Graduação',
+        valor:
+          'Bacharelado em Sistemas de Informação — UFOP, João Monlevade · 6º período, previsão em 12/2027',
       },
+      { rotulo: 'Inglês', valor: 'Avançado — Choice English School (2016–2022)' },
+      { rotulo: 'Português', valor: 'Nativo' },
     ],
   },
   contato: {
-    chamada: 'Disponível para vagas de backend júnior ou estágio, presencial em Minas ou remoto.',
-    local: 'Ouro Preto, MG',
+    chamada: 'Aberto a oportunidades como desenvolvedor fullstack júnior.',
+    local: 'João Monlevade, MG',
   },
   textos: {
+    tituloPagina: 'Ewerton Gomes Barcia — Desenvolvedor fullstack',
+    descricaoPagina:
+      'Portfolio de Ewerton Gomes Barcia, desenvolvedor fullstack júnior com React, TypeScript, Node.js e C#/.NET.',
     faleComigo: 'Fale comigo',
     curriculo: 'Currículo',
-    codigo: 'Código',
-    demo: 'Demo',
+    links: { codigo: 'Código', demo: 'Demo', pullRequest: 'Pull Request' },
     de: 'de',
     fotoDe: 'Foto de',
     pularConteudo: 'Pular para o conteúdo',
