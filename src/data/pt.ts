@@ -101,7 +101,7 @@ export const pt: Conteudo = {
       { rotulo: 'Práticas', valor: 'Git e code review, testes automatizados, APIs REST, Scrum' },
     ],
   },
-  certificacoes: {
+  formacao: {
     titulo: 'Certificações e idiomas',
     itens: [
       { rotulo: '2025', valor: 'Oracle Certified Foundations Associate — Java' },

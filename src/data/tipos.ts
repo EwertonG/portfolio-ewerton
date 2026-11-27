@@ -87,7 +87,7 @@ export interface Conteudo {
   experiencia: SecaoExperiencia;
   projetos: SecaoProjetos;
   habilidades: SecaoDetalhes;
-  certificacoes: SecaoDetalhes;
+  formacao: SecaoDetalhes;
   contato: Contato;
   textos: Textos;
 }
