@@ -61,7 +61,7 @@ export const pt: Conteudo = {
         descricao:
           'API de controle de estoque multiempresa, com autenticação por token e relatórios mensais em CSV.',
         tecnologias: ['Java', 'Spring Boot', 'PostgreSQL'],
-        repositorio: 'https://github.com/EwertonG/almoxarife',
+        links: [{ tipo: 'codigo', url: 'https://github.com/EwertonG/almoxarife' }],
       },
       {
         nome: 'Rota Serra',
@@ -69,8 +69,10 @@ export const pt: Conteudo = {
         descricao:
           'Aplicação web que cruza dados abertos de transporte para sugerir rotas entre distritos de Ouro Preto.',
         tecnologias: ['Python', 'FastAPI', 'Leaflet'],
-        repositorio: 'https://github.com/EwertonG/rota-serra',
-        demo: 'https://rota-serra.exemplo.com',
+        links: [
+          { tipo: 'codigo', url: 'https://github.com/EwertonG/rota-serra' },
+          { tipo: 'demo', url: 'https://rota-serra.exemplo.com' },
+        ],
       },
       {
         nome: 'Boletim Acadêmico',
@@ -78,7 +80,7 @@ export const pt: Conteudo = {
         descricao:
           'Painel de notas e frequência feito para a turma, com importação do sistema da universidade.',
         tecnologias: ['React', 'Node.js', 'SQLite'],
-        repositorio: 'https://github.com/EwertonG/boletim-academico',
+        links: [{ tipo: 'codigo', url: 'https://github.com/EwertonG/boletim-academico' }],
       },
       {
         nome: 'Fila Justa',
@@ -86,7 +88,7 @@ export const pt: Conteudo = {
         descricao:
           'Serviço de senhas para atendimento presencial, com painel de chamada e histórico de espera.',
         tecnologias: ['Python', 'Flask', 'WebSocket'],
-        repositorio: 'https://github.com/EwertonG/fila-justa',
+        links: [{ tipo: 'codigo', url: 'https://github.com/EwertonG/fila-justa' }],
       },
     ],
   },
@@ -118,8 +120,7 @@ export const pt: Conteudo = {
   textos: {
     faleComigo: 'Fale comigo',
     curriculo: 'Currículo',
-    codigo: 'Código',
-    demo: 'Demo',
+    links: { codigo: 'Código', demo: 'Demo', pullRequest: 'Pull Request' },
     de: 'de',
     fotoDe: 'Foto de',
     pularConteudo: 'Pular para o conteúdo',

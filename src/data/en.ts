@@ -61,7 +61,7 @@ export const en: Conteudo = {
         descricao:
           'Multi-company inventory control API with token authentication and monthly CSV reports.',
         tecnologias: ['Java', 'Spring Boot', 'PostgreSQL'],
-        repositorio: 'https://github.com/EwertonG/almoxarife',
+        links: [{ tipo: 'codigo', url: 'https://github.com/EwertonG/almoxarife' }],
       },
       {
         nome: 'Rota Serra',
@@ -69,8 +69,10 @@ export const en: Conteudo = {
         descricao:
           'Web app that combines open transit data to suggest routes between the districts of Ouro Preto.',
         tecnologias: ['Python', 'FastAPI', 'Leaflet'],
-        repositorio: 'https://github.com/EwertonG/rota-serra',
-        demo: 'https://rota-serra.exemplo.com',
+        links: [
+          { tipo: 'codigo', url: 'https://github.com/EwertonG/rota-serra' },
+          { tipo: 'demo', url: 'https://rota-serra.exemplo.com' },
+        ],
       },
       {
         nome: 'Boletim Acadêmico',
@@ -78,7 +80,7 @@ export const en: Conteudo = {
         descricao:
           'Grades and attendance dashboard built for my class, importing data from the university system.',
         tecnologias: ['React', 'Node.js', 'SQLite'],
-        repositorio: 'https://github.com/EwertonG/boletim-academico',
+        links: [{ tipo: 'codigo', url: 'https://github.com/EwertonG/boletim-academico' }],
       },
       {
         nome: 'Fila Justa',
@@ -86,7 +88,7 @@ export const en: Conteudo = {
         descricao:
           'Ticketing service for in-person service desks, with a call display and wait-time history.',
         tecnologias: ['Python', 'Flask', 'WebSocket'],
-        repositorio: 'https://github.com/EwertonG/fila-justa',
+        links: [{ tipo: 'codigo', url: 'https://github.com/EwertonG/fila-justa' }],
       },
     ],
   },
@@ -119,8 +121,7 @@ export const en: Conteudo = {
   textos: {
     faleComigo: 'Get in touch',
     curriculo: 'Résumé',
-    codigo: 'Code',
-    demo: 'Demo',
+    links: { codigo: 'Code', demo: 'Demo', pullRequest: 'Pull Request' },
     de: 'for',
     fotoDe: 'Photo of',
     pularConteudo: 'Skip to content',

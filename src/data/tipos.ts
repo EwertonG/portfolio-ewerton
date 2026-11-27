@@ -37,13 +37,19 @@ export interface SecaoExperiencia {
   itens: Experiencia[];
 }
 
+export type TipoLink = 'codigo' | 'demo' | 'pullRequest';
+
+export interface LinkProjeto {
+  tipo: TipoLink;
+  url: string;
+}
+
 export interface Projeto {
   nome: string;
   ano: string;
   descricao: string;
   tecnologias: string[];
-  repositorio?: string;
-  demo?: string;
+  links: LinkProjeto[];
 }
 
 export interface SecaoProjetos {
@@ -64,8 +70,7 @@ export interface Contato {
 export interface Textos {
   faleComigo: string;
   curriculo: string;
-  codigo: string;
-  demo: string;
+  links: Record<TipoLink, string>;
   de: string;
   fotoDe: string;
   pularConteudo: string;

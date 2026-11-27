@@ -1,27 +1,20 @@
-import type { Projeto, SecaoProjetos, Textos } from '../data/tipos';
+import type { LinkProjeto, Projeto, SecaoProjetos, Textos } from '../data/tipos';
 import { renderSecao } from '../componentes/secao';
 import { renderTecnologias } from '../componentes/tecnologias';
 
-function renderLink(rotulo: string, url: string | undefined, descricao: string): string {
-  if (!url) {
-    return '';
-  }
+function renderLink(link: LinkProjeto, projeto: Projeto, textos: Textos): string {
+  const rotulo = textos.links[link.tipo];
 
   return `
     <li>
-      <a href="${url}" target="_blank" rel="noopener" aria-label="${descricao}">
+      <a href="${link.url}" target="_blank" rel="noopener" aria-label="${rotulo} ${textos.de} ${projeto.nome}">
         ${rotulo} <span aria-hidden="true">↗</span>
       </a>
     </li>`;
 }
 
 function renderItem(projeto: Projeto, textos: Textos): string {
-  const links =
-    renderLink(
-      textos.codigo,
-      projeto.repositorio,
-      `${textos.codigo} ${textos.de} ${projeto.nome}`,
-    ) + renderLink(textos.demo, projeto.demo, `${textos.demo} ${textos.de} ${projeto.nome}`);
+  const links = projeto.links.map((link) => renderLink(link, projeto, textos)).join('');
 
   return `
     <li class="projetos__item">
